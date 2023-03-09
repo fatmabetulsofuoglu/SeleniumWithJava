@@ -9,12 +9,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class BeforeAfterNotations {
+public class BeforeAfterAnnotations {
+    WebDriver driver;
 
     // @Before her metottan önce çalışır.
     // @After her metottan sonra çalışır.
-    WebDriver driver;
-
+    // @BeforeClass ve @AfterClass notasyonları ise sadece classın çalışmasının öncesinde ve sonrasında çalışır
+    // @BeforeClass ve @AfterClass kullanıldığında metotlar static olmalıdır.
+    // @Ignore görmezden gel demek için kullanılır.
     @Before
     public void setup() {
         WebDriverManager.chromedriver().setup();

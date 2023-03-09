@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.List;
 
-public class TestNotation1 {
+public class TestAnnotation1 {
 
     // @Test notasyonu ile java classının çalışması için gerekli olan main metodu zorunluluğu kalkıyor.
     // @Test notasyonu eklediğimizde metodumuz bağımsız olarak çalışabiliyor
