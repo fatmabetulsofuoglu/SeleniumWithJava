@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class TestNotation1 {
 
@@ -30,5 +31,20 @@ public class TestNotation1 {
         System.out.println(resultText.getText());
 
         driver.close();
+    }
+
+    @Test
+    public void test02(){
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+        driver.get("https://www.bestbuy.com");
+        List<WebElement> buttonList = driver.findElements(By.tagName("button"));
+        System.out.println(buttonList.size());
+        for(WebElement each:buttonList){
+            System.out.println(each.getText());
+        }
     }
 }
