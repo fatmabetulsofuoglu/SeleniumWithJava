@@ -9,12 +9,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class TestAmazonSearchBox {
+
     /* Test Adımları
    1- https://www.amazon.com adresine gidin.
    2- Arama kutusuna "aeroplane" yazdırın.
    3- Enter'a basarak arama işlemini yaptırın.
    4- Bulunan sonuç sayısını yazdırın.
    */
+
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
