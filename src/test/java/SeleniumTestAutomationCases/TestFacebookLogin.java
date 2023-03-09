@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class TestFacebookLogin {
 
-     /* Test Adımları
+    /* Test Adımları
    1- https://www.facebook.com adresine gidin.
    2- Cookies çıkarsa kabul et butonuna basın
    3- E-posta kutusuna rastgele bir mail girin
