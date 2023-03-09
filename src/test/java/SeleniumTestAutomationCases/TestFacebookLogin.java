@@ -27,6 +27,8 @@ public class TestFacebookLogin {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         driver.get("https://www.facebook.com");
+
+        //Cookie
         //driver.findElement(By.xpath("//button[@title='Allow esential and optional cookies']")).click();
 
         WebElement mail = driver.findElement(By.xpath("//input[@id='email']"));
